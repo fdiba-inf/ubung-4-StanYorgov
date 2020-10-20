@@ -8,7 +8,7 @@ public class MaxElement {
 
         int index = input.nextInt();
         double[] numbers = new double[index];
-        double maxValue = Integer.MIN_VALUE;
+        double maxValue = Double.MIN_VALUE;
 
         for (int i = 0; i < index; i++) {
             numbers[i] = input.nextDouble();

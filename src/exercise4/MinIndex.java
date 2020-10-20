@@ -8,11 +8,13 @@ public class MinIndex {
 
         int index = input.nextInt();
         double[] array = new double[index];
-        int minIndex = Integer.MAX_VALUE;
+        double minValue = Double.MAX_VALUE;
+        int minIndex = 0;
 
         for (int i = 0; i < index; i++) {
             array[i] = input.nextDouble();
-            if (array[i] < minIndex) {
+            if (array[i] < minValue) {
+                minValue = array[i];
                 minIndex = i;
             }
         }
